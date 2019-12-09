@@ -39,10 +39,4 @@ def add(request):
 	}
 	return render(request, 'sightings/add.html', context)
 
-def map(request):
-	sightings = Squirrel.objects.order_by('?')[0:99]
-	context={'sightings':sightings}
-	return render(request, 'map/map.html',context)
-
-
 

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
+
+	<a href="/sightings/add">add</a>
+	<br>
+	<br>
+	{%  for sighting in sightings %}
+	    <a href="/sightings/{{sighting.Unique_Squirrel_ID}}">{{sighting.Unique_Squirrel_ID}}</a>
+	    <br>
+	{% endfor %}
+
+  </body>
+</html>
