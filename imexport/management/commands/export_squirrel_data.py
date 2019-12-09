@@ -15,6 +15,6 @@ class Command(BaseCommand):
 	def handle(self, *args, **kwargs):
 		directory = kwargs['directory']
 		list_sqr = list(Squirrel.objects.all().values())
-		df = pd.DataFrame(list_sqr)
+		df = pd.DataFrame(list_sqr).set_index('Unique_Squirrel_ID')
 		df.to_csv(directory)
 
