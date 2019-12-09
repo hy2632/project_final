@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'sightings',
     'map',
+    'homepage',
     'imexport',
     'django.contrib.admin',
     'django.contrib.auth',

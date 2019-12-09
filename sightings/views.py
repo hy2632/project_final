@@ -5,6 +5,7 @@ from django.http import HttpResponse
 from .models import Squirrel
 from .forms import SquirrelForm #Build a Form
 
+
 def index(request):
 	sightings = Squirrel.objects.all().order_by('Unique_Squirrel_ID')
 	context={'sightings':sightings}
