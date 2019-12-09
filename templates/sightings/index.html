@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><h2>Add New Squirrel</h2>
   </head>
   <body>
 
 	<a href="/sightings/add">add</a>
 	<br>
 	<br>
+	<head><h2>Update Squirrel Information</h2></head>
 	{%  for sighting in sightings %}
 	    <a href="/sightings/{{sighting.Unique_Squirrel_ID}}">{{sighting.Unique_Squirrel_ID}}</a>
 	    <br>
